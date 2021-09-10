@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Assembler directive highlighting for bass v14
-" Version 0.1
-" Maintainer: ARM9
+" Version 1.0.0
+" Maintainer: ARM9 / Douglas Diniz (www.manualdocodigo.com.br)
 
 syn keyword snesTodo    contained todo fixme xxx warning danger note notice bug author date
 

@@ -1,3 +1,7 @@
+" Vim syntax file
+" Language: Assembler instruction highlighting for 65816
+" Version 1.0.0
+" Maintainer: ARM9 / Douglas Diniz (www.manualdocodigo.com.br)
 
 syn keyword asm65Reg x y a s
 

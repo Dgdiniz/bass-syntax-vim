@@ -1,7 +1,7 @@
 " Vim syntax file
-" Language: 65816, spc700 and SuperFX assembly, for ca65, wdc816as, bass
-" Version 0.1
-" Maintainer: ARM9
+" Language: 65816, spc700 and SuperFX assembly, for bass
+" Version 1.0.0
+" Maintainer: ARM9 / Douglas Diniz (www.manualdocodigo.com.br)
 
 if version < 600
   syntax clear
@@ -11,9 +11,7 @@ endif
 
 syn case ignore
 
-" change include to your assembler
-so <sfile>:p:h/include/ca65.vim
-" so <sfile>:p:h/include/bass.vim
+so <sfile>:p:h/include/bass.vim
 
 so <sfile>:p:h/include/instr_65816.vim
 so <sfile>:p:h/include/instr_spc700.vim

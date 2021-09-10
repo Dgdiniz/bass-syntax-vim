@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: SuperFX assembly
-" Version 0.1
-" Maintainer: ARM9
+" Version 1.0.0
+" Maintainer: ARM9 / Douglas Diniz (www.manualdocodigo.com.br)
 
 if version < 600
   syntax clear
@@ -11,8 +11,7 @@ endif
 
 syn case ignore
 
-"so <sfile>:p:h/include/bass.vim
-so <sfile>:p:h/include/ca65.vim
+so <sfile>:p:h/include/bass.vim
 so <sfile>:p:h/include/instr_gsu.vim
 
 if version >= 508 || !exists("did_gsu_syntax_inits")
@@ -31,10 +30,10 @@ if version >= 508 || !exists("did_gsu_syntax_inits")
   HiLink snesString          String
   HiLink snesComment         Comment
   HiLink snesTodo            Todo
-  
+
   HiLink asmGsuReg      Type
   HiLink asmGsuOps      Function
-  
+
   delcommand HiLink
 endif
 
