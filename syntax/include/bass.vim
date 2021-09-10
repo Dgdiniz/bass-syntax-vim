@@ -3,22 +3,22 @@
 " Version 1.0.0
 " Maintainer: ARM9 / Douglas Diniz (www.manualdocodigo.com.br)
 
-syn keyword snesTodo    contained todo fixme xxx warning danger note notice bug author date
+syn keyword bassTodo    contained todo fixme xxx warning danger note notice bug author date
 
-syn match snesNumericOperator "[+-/*<>=&|^!#]"
+syn match bassNumericOperator "[+-/*<>=&|^!#]"
 
-syn match snesNumbers "\%(\$\x\+\|0x\x\+\|\d\+\|%[01]\+\|0b[01]\+\|0o[0-7]\+\)\>"
+syn match bassNumbers "\%(\$\x\+\|0x\x\+\|\d\+\|%[01]\+\|0b[01]\+\|0o[0-7]\+\)\>"
 
-syn match snesLabel "\<[_a-z][_a-z0-9.]*:\?"
+syn match bassLabel "\<[_a-z][_a-z0-9.]*:\?"
 
-syn keyword snesDirective arch base constant db dd define defined dl dq dw else endian error evaluate fill global float32 float64 include insert macro map notice origin output print pullvar pushvar putchar scope variable warning while
+syn keyword bassDirective arch base constant db dd define defined dl dq dw else endian error evaluate fill global float32 float64 include insert macro map notice origin output print pullvar pushvar putchar scope variable warning while
 " todo: fix if keyword so multiline comment if 0 { works
 
-syn match   snesComment "//.*$" contains=snesTodo
-syn region  snesComment start="if 0 {" skip="//.*$" end="}" contains=snesTodo
+syn match   bassComment "//.*$" contains=bassTodo
+syn region  bassComment start="if 0 {" skip="//.*$" end="}" contains=bassTodo
 
-syn region snesString       start="\""  skip=+\\"+ end="\"\|$"
-syn region snesString       start="'"   skip=+\\'+ end="'\|$"
+syn region bassString       start="\""  skip=+\\"+ end="\"\|$"
+syn region bassString       start="'"   skip=+\\'+ end="'\|$"
 
 syn keyword asm65816Ops adc.b adc.w adc.l and.b and.w and.l asl.b asl.w bit.b bit.w
 syn keyword asm65816Ops cmp.b cmp.w cmp.l cpx.b cpx.w cpy.b cpy.w dec.b dec.w
