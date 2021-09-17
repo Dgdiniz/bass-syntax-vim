@@ -38,7 +38,7 @@ if version >= 508 || !exists("did_bass_syntax_inits")
 
   HiLink asmm68kReg          Type
   HiLink asmm68kOps          Function
-  HiLink asmm68kCond         Function
+  HiLink asmm68kCond         Conditional
 
   HiLink asm65Reg            Type
   HiLink asm65816Ops         Function
