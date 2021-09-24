@@ -5,13 +5,13 @@
 
 syn keyword bassTodo    contained todo fixme xxx warning danger note notice bug author date
 
-syn match bassNumericOperator "[+-/*<>=&|^!#]"
+syn match bassNumericOperator "[+-/*<>=&|^!#~]"
 
 syn match bassNumbers "\%(\$\x\+\|0x\x\+\|\d\+\|%[01]\+\|0b[01]\+\|0o[0-7]\+\)\>"
 
 syn match bassLabel "\<[_a-z][_a-z0-9.]*:\?"
 
-syn keyword bassDirective arch base constant db dd define defined dl dq dw else endian error evaluate fill global float32 float64 include insert macro map notice origin output print pullvar pushvar putchar scope variable warning while
+syn keyword bassDirective arch architecture array array.size array.sort assert base binary: char: constant copy db dd define defined delete dequeue dl dq ds dw else endian enqueue error evaluate expression file.size file.exists fill float32 float64 function global hex: include inline insert macro map namespace notice origin output parent print pullvar pushvar putchar read scope tracker variable warning while
 " todo: fix if keyword so multiline comment if 0 { works
 
 syn match   bassComment "//.*$" contains=bassTodo
