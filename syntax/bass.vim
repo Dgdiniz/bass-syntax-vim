@@ -15,6 +15,7 @@ so <sfile>:p:h/include/bass.vim
 so <sfile>:p:h/include/instr_65816.vim
 so <sfile>:p:h/include/instr_spc700.vim
 so <sfile>:p:h/include/instr_gsu.vim
+so <sfile>:p:h/include/keywords_snes.vim
 so <sfile>:p:h/include/instr_m68k.vim
 so <sfile>:p:h/include/instr_6502.vim
 
@@ -28,10 +29,8 @@ if version >= 508 || !exists("did_bass_syntax_inits")
 
   HiLink bassNumericOperator Operator
   HiLink bassNumbers         Number
-
   HiLink bassLabel           Label
   HiLink bassDirective       Identifier
-" PreProc
   HiLink bassString          String
   HiLink bassComment         Comment
   HiLink bassTodo            Todo
