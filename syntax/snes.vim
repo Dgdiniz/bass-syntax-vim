@@ -33,6 +33,7 @@ if version >= 508 || !exists("did_snes_syntax_inits")
   HiLink snesCpuWrite        Typedef
   HiLink snesCpuRead         Typedef
   HiLink snesCpuDma          Typedef
+  HiLink snesConstant        Typedef
 
   HiLink bassNumericOperator Operator
   HiLink bassNumbers         Number
